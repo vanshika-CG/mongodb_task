@@ -113,5 +113,12 @@ this will find all software course enrolled.
 ```
 db.students.updateOne(
     {"name":"kanishka"},
-    
-)
+  {$set:{"department":"IT"}}
+);
+```
+update a department from cse to IT.
+
+```
+db.students.deleteOne({"name":"kanishka"})
+```
+this will delete kanishka name from the data.
